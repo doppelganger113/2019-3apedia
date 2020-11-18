@@ -1,2 +1,6 @@
 # 2019-3apedia
-Containts workshops for 3AP pedia in 2019.
+
+Contains workshops for 3AP pedia in 2019.
+
+ - [Go](./go/README.md)
+ - [Kotlin](./kotlin/README.md)
