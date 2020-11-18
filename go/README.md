@@ -23,9 +23,13 @@
 
 ## Learning references
 
-To ease your learning always refer to the following:
+During exercises you can refer to following sheets:
  - [Go cheatsheet](https://devhints.io/go)
  - [Gy by example](https://gobyexample.com/)
+ 
+Learning references:
+ - `Go in action` ebook
+ - `Go programming blueprints` ebook
 
 
 ## Plan
