@@ -2,6 +2,11 @@
 
 This README contains table of contents for the 3apedia presentation and serves as a guideline.
 
+## Requirements
+For this workshop you will need an [IDE](https://www.jetbrains.com/idea/) and Java >= 11.
+Ensure that you open only the `kotlin/` directory with InteliJ and test Gradle with `build`
+command to verify everything is properly setup.
+
 ## Plan
 1. Presentation
 2. Basics
