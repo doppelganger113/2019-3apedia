@@ -80,11 +80,11 @@ so it's in the following order (IMDB rating is from 0.0 to 10.0):
 Application should output at the end in the following format:
 ```text
 Best:
- count:
- top_movie:
- us_gross: 
- world_wide_gross:
- total_gross:
+ count: <Number of movies in the Best group>
+ top_movie: <Top 5 movies in this group sorted by rating from best to worst>
+ us_gross: <sum>
+ world_wide_gross: <sum>
+ total_gross: <sum>
 
 Good:
  count:
@@ -144,14 +144,18 @@ Data for the first exercise is located in `data/movies.json` as array with the f
 }
 ```
 
-### 2. HTTP server
+### 2. HTTP api client
 
-Create HTTP server with single endpoint to retrieve a resource which is fetched from 
-[HackerNewsAPI](https://github.com/HackerNews/API) and cache that resource if it exists by id. Bonus would be to add 
-cache expiration.
-
-Acceptance Criteria:
- - Create endpoint /item/:id which will return response of `https://hacker-news.firebaseio.com/v0/item/8863.json`
- - Response must be in json format
- - Synchronize caching, eg read and set
- - Bonus: cache should expire after a time limit has passed since setting the value
+Task
+Use HackerNewsAPI to retrieve list of items based on ID
+You will need to perform HTTP requests concurrently through goroutines
+Create a function that will accept a slice of int ids and return list of items
+https://hacker-news.firebaseio.com/v0/item/8863.json
+```go
+resp, err := http.Get("http://example.com/")
+if err != nil {
+   // handle error
+ }
+defer resp.Body.Close()
+body, err := ioutil.ReadAll(resp.Body)
+```
