@@ -4,6 +4,7 @@ import "fmt"
 
 func handleMaps() {
 	hashMap := make(map[string]int)
+	// slices := make([]int, 0)
 	hashMap["1"] = 1
 	hashMap["2"] = 0
 

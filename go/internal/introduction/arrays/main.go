@@ -1,20 +1,14 @@
 package arrays
 
-import "fmt"
+import "errors"
 
-func addNumbers(sliceArray *[]int, numbers ...int) []int {
-	return append(*sliceArray, numbers...)
+func AddNumbers(sliceArray []int, numbers ...int) []int {
+	return append(sliceArray, numbers...)
 }
 
-func main() {
-	numbers := make([]int, 2, 10)
-	newNumbers := append(numbers, 6, 7)
-	fmt.Println(numbers)
-	fmt.Println(newNumbers)
-
-	numbers[1] = 10
-	fmt.Println(".........")
-
-	fmt.Println(numbers)
-	fmt.Println(newNumbers)
+func RemoveNumber(slice []int, index int) ([]int, error) {
+	if index >= len(slice) {
+		return nil, errors.New("index out of bounds")
+	}
+	return append(slice[:index], slice[index+1:]...), nil
 }

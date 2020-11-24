@@ -13,11 +13,15 @@
         - Run `cmd + shift + p` to open command pallet, select `Go: Install/Update Tools` and check all 
         - More info in this [YouTube tutorial](https://www.youtube.com/watch?v=TfCMweSHWHw) 
 
+            ![Intelij new Go Project](./assets/go_new_project.png)
+    
 3. Create a single `main.go` file in the root directory
 
 4. Commands (check `Makefile` for more info)
     - Run `make run`
-    - Build `make build`
+    - Install `make install`
+    - Build `make`
+    - Format `make format`
     - Test `make test`
     - Compile `make compile` (build for specific OS) 
 
@@ -31,11 +35,10 @@ Learning references:
  - `Go in action` ebook
  - `Go programming blueprints` ebook
 
-
 ## Plan
 Summary of the planned presentation.
 
-1. Introduction (30min)
+1. Introduction
     1. Variables and basic types
     2. Structs
     3. Pointers
@@ -47,13 +50,13 @@ Summary of the planned presentation.
     9. Error handling and defer
     10. Interfaces and composition
     11. Testing and benchmarking
-2. Simple exercise, process a JSON file (30min) 
-3. Concurrency (45min)
+2. Simple exercise, process a JSON file
+3. Concurrency
     1. Goroutines
     2. WaitGroup and mutex
     3. Channels (Buffered and UnBuffered) and select statement
     4. HTTP server
-4. Simple exercise, HackerNews API processing (45min)
+4. Simple exercise, HackerNews API processing
 
 
 ## Exercises
