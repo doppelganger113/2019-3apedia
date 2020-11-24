@@ -1,3 +1,5 @@
+github.com/doppelganger113/2019-3apedia v0.0.0-20201124095225-8c9daa485fe9 h1:haM15OsGpbFJhkSmTylNbvohrp55XDzKibDvj8EOsgw=
+github.com/doppelganger113/2019-3apedia v0.0.0-20201124095225-8c9daa485fe9/go.mod h1:wxZzNKiNbzYUOZNrqCLLM21y7usqp/ZVIvtkDj7Ecm0=
 github.com/fatih/color v1.10.0 h1:s36xzo75JdqLaaWoiEHk767eHiwo0598uUxyfiPkDsg=
 github.com/fatih/color v1.10.0/go.mod h1:ELkj/draVOlAH/xkhN6mQ50Qd0MPOk5AAr3maGEBuJM=
 github.com/gorilla/websocket v1.4.2 h1:+/TMaTYc4QFitKJxsQ7Yye35DkWvkdLcvGKqM+x0Ufc=

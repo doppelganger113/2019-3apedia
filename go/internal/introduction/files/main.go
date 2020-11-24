@@ -5,17 +5,17 @@ import (
 	"os"
 )
 
-func ReadFromFile(fileName string) (string, error) {
+func ReadFromFile(fileName string) ([]byte, error) {
 	file, err := os.Open(fileName)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 	defer file.Close()
 
 	data, err := ioutil.ReadAll(file)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 
-	return string(data), nil
+	return data, nil
 }
