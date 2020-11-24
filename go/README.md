@@ -1,5 +1,9 @@
 # Go presentation material
 
+Workshop code for introduction to Go programming language.
+
+   ![Gopher](./assets/gopher.png)
+
 ## Setup
 1. Install Go for
     1. Linux, Mac or Windows via [Official install website](https://golang.org/doc/install) 
@@ -30,6 +34,7 @@
 During exercises you can refer to following sheets:
  - [Go cheatsheet](https://devhints.io/go)
  - [Gy by example](https://gobyexample.com/)
+ - [Go project layout](https://github.com/golang-standards/project-layout)
  
 Learning references:
  - `Go in action` ebook
