@@ -24,11 +24,11 @@ func RunChannels() {
 	wg.Add(2)
 	go func() {
 		defer wg.Done()
-		isOk := true
-
-		for isOk {
+		for {
 			val, ok := <-emitter
-			isOk = ok
+			if !ok {
+				return
+			}
 			fmt.Println("Working...")
 			time.Sleep(3 * time.Second)
 			color.Cyan("Value: ", val)
@@ -37,11 +37,11 @@ func RunChannels() {
 
 	go func() {
 		defer wg.Done()
-		isOk := true
-
-		for isOk {
+		for {
 			val, ok := <-emitter
-			isOk = ok
+			if !ok {
+				return
+			}
 			color.Green("Value: ", val)
 		}
 	}()
